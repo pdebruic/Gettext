@@ -1,3 +1,3 @@
 accessing
 translator
-	^ InternalTranslator localeID: self 
+	^ NaturalLanguageTranslator localeID: self 

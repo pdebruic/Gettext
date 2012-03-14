@@ -1,3 +1,3 @@
 private
 localeDirsForDomain
-	^LocaleDirsForDomain ifNil: [LocaleDirsForDomain _ Dictionary new]
+	^LocaleDirsForDomain ifNil: [LocaleDirsForDomain := Dictionary new]

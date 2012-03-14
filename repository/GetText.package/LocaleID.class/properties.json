@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "GetText-Localization",
+	"category" : "Gettext",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

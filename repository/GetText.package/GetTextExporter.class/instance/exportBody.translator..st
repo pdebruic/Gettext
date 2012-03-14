@@ -11,16 +11,16 @@ exportBody: literals translator: translator
 				collect: [:assoc | 
 					msgid := assoc key.
 					sortedMethods := assoc value asArray sort.
-					category := (Smalltalk at: sortedMethods first classSymbol) category asString.
+					category := (Smalltalk at: sortedMethods first theNonMetaClassName) category asString.
 					sortKey := category , ',' , sortedMethods first printString , ',' , msgid.
 					comment := (sortedMethods
 								collect: [:each | each actualClass asString , '>>' , each methodSymbol asString])
 								inject: category
 								into: [:result :methodName | result , ',' , methodName].
-					"Replace white spaces to _ because gettext tool might
+					"Replace white spaces to := because gettext tool might
 					replace a space to a new line some times, and it makes
 					difficult to take a diff."
-					commentUnderLined := comment copyReplaceAll: ' ' with: '_'.
+					commentUnderLined := comment copyReplaceAll: ' ' with: ':='.
 					Array
 						with: sortKey
 						with: commentUnderLined

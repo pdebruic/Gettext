@@ -1,4 +1,4 @@
 utilities
 exportTemplate
-	"GetTextExporter2 exportTemplate"
-	self new exportTemplate.
+	"GetTextExporter exportTemplate"
+	self new exportTemplate

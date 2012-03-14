@@ -1,4 +1,4 @@
 public
 atRandom
 
-	^ self translatedString:nStrings atRandom.
+	^translatedStrings at: nStrings atRandom.

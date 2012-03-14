@@ -1,3 +1,3 @@
 initialize-release
 initialize
-	moFiles _ Dictionary new.
+	moFiles := Dictionary new.

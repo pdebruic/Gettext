@@ -1,3 +1,0 @@
-updating
-refreshBoth
-	self refreshUntranslated

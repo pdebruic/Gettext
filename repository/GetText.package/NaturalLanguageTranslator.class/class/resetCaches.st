@@ -1,3 +1,3 @@
-class initialization
+accessing
 resetCaches
 	Translators := nil.

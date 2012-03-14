@@ -1,4 +1,4 @@
 accessing
 reloadMOFiles
-	moFiles _ Dictionary new.
+	moFiles := Dictionary new.
 	self loadMOFiles.

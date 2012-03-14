@@ -4,7 +4,7 @@ stringReceiversWithContext: aSymbol
 	Answer a collection of aMethodReference -> {keyword. keyword...}"
 	"self new stringReceiversWithContext: #translated"
 	| keywords methodReferences |
-	methodReferences _ SystemNavigation default allCallsOn: aSymbol.
+	methodReferences := SystemNavigation default allCallsOn: aSymbol.
 	^ methodReferences inject: OrderedCollection new into: [:list :next |
 		keywords := self findWordsWith: aSymbol in: next.
 		keywords

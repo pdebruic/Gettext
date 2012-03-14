@@ -1,17 +1,19 @@
 {
 	"instance" : { },
 	"class" : {
-		"allKnownDomains" : "Richo 4/15/2011 13:07",
-		"clearAllDomains" : "Richo 5/13/2010 00:16",
-		"updateDomainOfAllMethodsWithTranslations" : "Richo 5/13/2010 00:46",
-		"textDomainProperty" : "Richo 5/13/2010 00:12",
-		"domainForPackage:" : "Richo 5/13/2010 00:10",
-		"defaultDomain:" : "Richo 5/13/2010 00:02",
-		"domainOfMethod:" : "Richo 5/13/2010 00:17",
-		"initialize" : "edc 3/13/2012 10:16",
-		"defaultDomain" : "Richo 5/13/2010 00:08",
-		"domainForClass:" : "Richo 5/18/2010 11:13",
-		"updateDomainOfMethod:" : "Richo 5/13/2010 00:27",
-		"allMethodsWithTranslations" : "Richo 5/13/2010 00:45"
+		"allKnownDomains" : "KR 10/5/2007 00:36",
+		"domainInfos" : "KR 10/23/2007 15:02",
+		"registerClass:domain:" : "HilaireFernandes 5/7/2010 18:48",
+		"defaultDomain:" : "KR 9/28/2007 14:23",
+		"initialize" : "HilaireFernandes 5/7/2010 18:48",
+		"domainForClassCategory:" : "KR 10/23/2007 13:31",
+		"registerCategoryPrefix:domain:" : "KR 10/23/2007 15:29",
+		"domainInfoFor:" : "KR 10/23/2007 15:32",
+		"defaultDomain" : "KR 9/28/2007 14:23",
+		"refresh" : "tk 1/2/2008 17:28",
+		"domainForClass:" : "tak 10/25/2007 14:27",
+		"registerClassCategory:domain:" : "KR 10/23/2007 15:43",
+		"registerDomain:" : "KR 10/23/2007 18:42",
+		"unregisterDomain:" : "KR 10/23/2007 19:04"
 	}
 }

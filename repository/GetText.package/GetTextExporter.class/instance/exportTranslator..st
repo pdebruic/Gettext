@@ -1,7 +1,7 @@
 exporting
 exportTranslator: translator 
 	"Export translation files. the file extention is 'po', or 'pot' if translator is nil "
-	"GetTextExporter2 new exportTranslator: NaturalLanguageTranslator current "
+	"GetTextExporter new exportTranslator: NaturalLanguageTranslator current "
 	| domains |
 	domains := Dictionary new.
 	self appendTranslations: domains.

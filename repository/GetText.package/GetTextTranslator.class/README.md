@@ -1,3 +1,3 @@
 emulation of gettext runtime
 Known limitation:  
-     currently doesn't support plural forms.
+     currently don't support prural form.

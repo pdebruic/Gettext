@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "<historical>",
 	"super" : "NaturalLanguageTranslator",
-	"category" : "GetText-Localization",
+	"category" : "Gettext",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [

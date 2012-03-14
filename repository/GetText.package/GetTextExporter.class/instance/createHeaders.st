@@ -1,8 +1,8 @@
-private-headers
+private
 createHeaders
 	| headers |
 	headers := OrderedCollection new.
-	headers add: 'Project-Id-Version' -> 'eToys'.
+	headers add: 'Project-Id-Version' -> 'Pharo'.
 	headers add: 'POT-Creation-Date' -> self currentDateAndTime.
 	headers add: 'PO-Revision-Date' -> self currentDateAndTime.
 	headers add: 'Last-Translator' -> ''.
@@ -10,4 +10,5 @@ createHeaders
 	headers add: 'MIME-Version' -> '1.0'.
 	headers add: 'Content-Type' -> ('text/plain; charset=', stream converter class encodingNames first).
 	headers add: 'Content-Transfer-Encoding' -> '8bit'.
+	headers add: 'X-Pharo-SystemVersion' -> (SystemVersion current asString).
 	^ headers

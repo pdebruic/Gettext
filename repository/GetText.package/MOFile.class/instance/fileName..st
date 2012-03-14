@@ -1,3 +1,3 @@
 public
 fileName: path
-	fileName _ path
+	fileName := path

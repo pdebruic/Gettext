@@ -1,3 +1,0 @@
-accessing
-translationsFilter
-^translationsFilter ifNil:['']

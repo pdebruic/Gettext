@@ -5,31 +5,31 @@ exportPhrase: phraseString translation: translationString
 		ifTrue: [^ self].
 	self exportTag: 'msgid' msg: phraseString.
 	translationString size = 0 ifTrue: [
-		normalizedTrans _ ''
+		normalizedTrans := ''
 	] ifFalse: [
-		transEndsWithCR _ translationString last = (Character cr).
+		transEndsWithCR := translationString last = (Character cr).
 		phraseString last = (Character cr) ifTrue: [
 			transEndsWithCR ifTrue: [
-				normalizedTrans _ translationString
+				normalizedTrans := translationString
 			] ifFalse: [
-				normalizedTrans _  translationString , String cr
+				normalizedTrans :=  translationString , String cr
 			]
 		] ifFalse: [
 			transEndsWithCR ifTrue: [
-				normalizedTrans _ translationString allButLast
+				normalizedTrans := translationString allButLast
 			] ifFalse: [
-				normalizedTrans _ translationString
+				normalizedTrans := translationString
 			]
 		].
-		transStartsWithCR _ normalizedTrans first = (Character cr).
+		transStartsWithCR := normalizedTrans first = (Character cr).
 		phraseString first = (Character cr) ifTrue: [
 			transStartsWithCR ifFalse: [
-				tmp _ (Character cr asString) , normalizedTrans.
-				normalizedTrans _ tmp.
+				tmp := (Character cr asString) , normalizedTrans.
+				normalizedTrans := tmp.
 			]
 		] ifFalse: [
 			transStartsWithCR ifTrue: [
-				normalizedTrans _ normalizedTrans allButFirst
+				normalizedTrans := normalizedTrans allButFirst
 			]
 		]
 	].

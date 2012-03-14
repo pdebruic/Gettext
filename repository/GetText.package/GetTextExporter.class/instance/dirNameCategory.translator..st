@@ -6,7 +6,7 @@ dirNameCategory: category translator: translator
 	NaturalLanguageTranslator current"
 	"self new dirNameCategory: 'Morphic-Scripting Support' translator: nil"
 	| safeCategory fileName dirName pathName |
-	safeCategory := category copyReplaceAll: ' ' with: '_'.
+	safeCategory := category copyReplaceAll: ' ' with: ':='.
 	fileName := translator
 				ifNil: [safeCategory , '.pot']
 				ifNotNil: [translator localeID posixName , '.po'].
