@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "GetText-Localization",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"CachedTranslations"
+	],
+	"instvars" : [
+		"id",
+		"generics"
+	],
+	"name" : "NaturalLanguageFormTranslator",
+	"type" : "normal"
+}

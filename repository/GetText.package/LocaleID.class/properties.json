@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "GetText-Localization",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"isoLanguage",
+		"isoCountry"
+	],
+	"name" : "LocaleID",
+	"type" : "normal"
+}

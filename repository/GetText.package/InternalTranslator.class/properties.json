@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "tak 10/19/2007 11:12",
+	"super" : "NaturalLanguageTranslator",
+	"category" : "GetText-Localization",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"AllKnownPhrases",
+		"CachedTranslations"
+	],
+	"instvars" : [
+		"generics"
+	],
+	"name" : "InternalTranslator",
+	"type" : "normal"
+}

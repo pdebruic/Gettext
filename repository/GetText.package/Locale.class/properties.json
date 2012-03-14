@@ -1,0 +1,32 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "Object",
+	"category" : "GetText-Localization",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"Current",
+		"CurrentPlatform",
+		"KnownLocales",
+		"LanguageSymbols",
+		"LocaleChangeListeners",
+		"PlatformEncodings",
+		"Previous"
+	],
+	"instvars" : [
+		"id",
+		"shortDate",
+		"longDate",
+		"time",
+		"decimalSymbol",
+		"digitGrouping",
+		"currencySymbol",
+		"currencyNotation",
+		"measurement",
+		"offsetLocalToUTC",
+		"offsetVMToUTC",
+		"dstActive"
+	],
+	"name" : "Locale",
+	"type" : "normal"
+}

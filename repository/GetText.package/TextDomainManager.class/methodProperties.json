@@ -1,0 +1,17 @@
+{
+	"instance" : { },
+	"class" : {
+		"allKnownDomains" : "Richo 4/15/2011 13:07",
+		"clearAllDomains" : "Richo 5/13/2010 00:16",
+		"updateDomainOfAllMethodsWithTranslations" : "Richo 5/13/2010 00:46",
+		"textDomainProperty" : "Richo 5/13/2010 00:12",
+		"domainForPackage:" : "Richo 5/13/2010 00:10",
+		"defaultDomain:" : "Richo 5/13/2010 00:02",
+		"domainOfMethod:" : "Richo 5/13/2010 00:17",
+		"initialize" : "edc 3/13/2012 10:16",
+		"defaultDomain" : "Richo 5/13/2010 00:08",
+		"domainForClass:" : "Richo 5/18/2010 11:13",
+		"updateDomainOfMethod:" : "Richo 5/13/2010 00:27",
+		"allMethodsWithTranslations" : "Richo 5/13/2010 00:45"
+	}
+}
