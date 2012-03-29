@@ -7,10 +7,14 @@ dirNameDomain: domain translator: translator
 	"self new dirNameDomain: 'etoys' translator: nil"
 	| fileName dirName pathName |
 	"safeCategory := category copyReplaceAll: ' ' with: ':='."
-	fileName := translator
-				ifNil: [domain , '.pot']
-				ifNotNil: [translator localeID posixName , '.po'].
-	dirName := 'po', FileDirectory slash, domain.
+	fileName := domain, 
+						(translator
+							ifNil: ['.pot']
+							ifNotNil: ['.po']).
+	dirName := 'po', FileDirectory slash, 
+								(translator 
+										ifNil: ['templates'] 
+										ifNotNil: [translator localeID posixName]). 
 	pathName := dirName , FileDirectory slash , fileName.
 	(FileDirectory default directoryNamed: dirName) assureExistence.
 	^ pathName

@@ -1,3 +1,3 @@
 accessing
 defaultDomain: aDomainName
-	DefaultDomain := aDomainName
+	defaultDomain := aDomainName

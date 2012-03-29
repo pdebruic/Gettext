@@ -7,6 +7,7 @@ export: literals translator: translator domain: domainName
 	stream lineEndConvention: #lf.
 	stream converter: UTF8TextConverter new.
 	self exportHeader: domainName.
-	self exportInformation: self createExtraInformation.
+	domainName = TextDomainManager defaultDomain
+	ifTrue: [self exportInformation: self createExtraInformation].
 	self exportBody: literals translator: translator]
 		ensure: [stream close]

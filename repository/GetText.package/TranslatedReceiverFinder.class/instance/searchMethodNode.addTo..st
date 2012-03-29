@@ -1,4 +1,4 @@
-actions
+as yet unclassified
 searchMethodNode: aMethodNode addTo: aCollection
 
 	(aMethodNode block isMemberOf: BlockNode) ifTrue: [self searchBlockNode: aMethodNode block addTo: aCollection].

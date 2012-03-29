@@ -6,11 +6,12 @@ appendStringReceivers: aSymbol into: domains
 	found do: [ :assoc |
 		methodReference := assoc key.
 		keywords := assoc value.
-		domainName := self getTextDomainForClassCategory:
-			(Smalltalk at: methodReference theNonMetaClassName) category.
+		domainName := (PackageOrganizer default packageOfMethod: methodReference ifNone: [nil]).
+		domainName := domainName isNil ifTrue: [TextDomainManager defaultDomain] ifFalse: [domainName name].
 		literals := domains at: domainName ifAbsentPut: [Dictionary new].
 		keywords do: [ :literal |
 			references := literals at: literal ifAbsentPut: [OrderedCollection new].
 			references add: methodReference.
 		].
 	]. 
+

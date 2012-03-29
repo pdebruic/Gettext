@@ -7,7 +7,7 @@ findWordsWith: aSymbol in: aMethodReference
 	methodSymbol: #supplementaryPartsDescriptions.
 	self new findWordsWIth: #translatedNoop in: message"
 	| messages keywords aParseNode |
-	aParseNode := aMethodReference method decompile.
+	aParseNode := aMethodReference decompile.
 	"Find from string literal"
 	messages := Set new.
 	self
@@ -17,8 +17,8 @@ findWordsWith: aSymbol in: aMethodReference
 	keywords := OrderedCollection new.
 	messages
 		select: [:aMessageNode | aMessageNode receiver isMemberOf: LiteralNode]
-		thenDo: [:aMessageNode | keywords add: aMessageNode receiver key
-				"literalStringsDo: [:literal | keywords add: literal]"].
+		thenDo: [:aMessageNode | aMessageNode receiver key
+				literalStringsDo: [:literal | keywords add: literal]].
 	"Find from array literal"
 	self
 		arraySearch: aSymbol

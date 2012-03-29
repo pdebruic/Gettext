@@ -1,0 +1,36 @@
+gui methods
+codeSelectedTranslationAsMimeString
+	| keys code tmpStream s2 gzs cont |
+	keys := selectedTranslations
+				collect: [:key | self translations at: key].
+	code := String
+				streamContents: [:aStream | self translator fileOutOn: aStream keys: keys withBOM: false].
+
+	tmpStream := MultiByteBinaryOrTextStream on: ''.
+	tmpStream converter: UTF8TextConverter new.
+	tmpStream nextPutAll: code.
+	s2 := RWBinaryOrTextStream on: ''.
+	gzs := GZipWriteStream on: s2.
+	tmpStream reset.
+	gzs nextPutAll: (tmpStream binary contentsOfEntireFile asString) contents.
+	gzs close.
+	s2 reset.
+
+	cont := String streamContents: [:strm |
+		strm nextPutAll: '"Gzip+Base64 encoded translation for;'; cr.
+		strm nextPutAll: '#('.
+		keys do: [:each | strm  nextPutAll: '''', each, ''' '.].
+		strm nextPutAll: ')"'; cr; cr.
+		strm nextPutAll: 'NaturalLanguageTranslator loadForLocaleIsoString: '.
+		strm nextPut: $'.
+		strm nextPutAll: translator localeID isoString.
+		strm nextPut: $'.
+		strm nextPutAll: ' fromGzippedMimeLiteral: '.
+		strm nextPut: $'.
+		strm nextPutAll: (Base64MimeConverter mimeEncode: s2) contents.
+		strm nextPutAll: '''.'.
+		strm cr.
+	].
+	
+	(StringHolder new contents: cont)
+		openLabel: 'exported codes in Gzip+Base64 encoding' translated

@@ -1,3 +1,0 @@
-accessing
-resetCaches
-	Translators := nil.

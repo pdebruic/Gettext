@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Gettext",
+	"category" : "GetText-Editor",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

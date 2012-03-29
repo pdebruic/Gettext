@@ -1,20 +1,18 @@
 private
 loadStrings: strm pointers: tupple encoding: encodingName languageEnvironment: env
-	| offsetTable lenTable strings |
-	strm ascii; 
-		converter: (TextConverter newForEncoding: encodingName).
+	| strings rawStr str offsetTable lenTable |
 	offsetTable :=  tupple first.
 	lenTable := tupple second.
 	strings := Array new: nStrings.
-	1 to: nStrings do: [:index | |  rawStr start byteLength endPos|
-		start := offsetTable at: index.
-		byteLength := lenTable at: index.
-		endPos := start + byteLength.
-		rawStr :=  (String new: byteLength) writeStream.
-		strm position:  start.
-		[strm position < endPos] whileTrue: [rawStr nextPut: strm next].
-		strings at: index put: rawStr contents.
-		
-
+	1 to: nStrings do: [:index |
+		rawStr := self loadString: strm 
+					pointer:  (offsetTable at: index)
+					length: (lenTable at: index).
+		str := encodingName isNil ifTrue: [rawStr] 
+						ifFalse: [ encodingName = 'utf8' 
+									ifTrue: [rawStr utf8ToSqueak applyLanguageInfomation: env]
+									ifFalse: [self error: 'this encoding isn''t supported']
+						].
+		strings at: index put: str.
 	].
 	^strings.

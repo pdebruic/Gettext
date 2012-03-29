@@ -1,15 +1,18 @@
 {
 	"commentStamp" : "tk 1/4/2008 16:08",
 	"super" : "Object",
-	"category" : "Gettext",
-	"classinstvars" : [ ],
+	"category" : "GetText-Localization",
+	"classinstvars" : [
+		"defaultDomain"
+	],
 	"pools" : [ ],
 	"classvars" : [
 		"ClassCategories",
 		"Classes",
 		"DefaultDomain",
 		"DomainInfos",
-		"LoneClasses"
+		"LoneClasses",
+		"Packages"
 	],
 	"instvars" : [ ],
 	"name" : "TextDomainManager",

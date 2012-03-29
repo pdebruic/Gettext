@@ -1,18 +1,21 @@
 {
 	"instance" : {
-		"arraySearch:fromArray:addTo:" : "HilaireFernandes 4/30/2010 15:49",
-		"findWordsWith:in:" : "HilaireFernandes 3/14/2012 21:25",
+		"arraySearch:fromArray:addTo:" : "tak 7/30/2007 15:22",
+		"stringReceiversWithContext" : "KR 7/11/2007 02:06",
+		"findWordsWith:in:" : "tak 9/27/2007 15:59",
+		"stringReceivers" : "tak 7/24/2007 14:53",
 		"stringReceiversWithContext:" : "tak 9/27/2007 15:59",
-		"senders" : "StephaneDucasse 3/20/2010 12:07",
+		"senders" : "nice 1/10/2010 15:39",
 		"searchReturnNode:addTo:" : "yo 8/2/2004 17:21",
 		"searchBlockNode:addTo:" : "yo 8/2/2004 17:22",
 		"searchMethodNode:addTo:" : "yo 8/2/2004 17:22",
-		"arraySearch:messageNode:addTo:" : "HilaireFernandes 4/30/2010 15:48",
+		"arraySearch:messageNode:addTo:" : "tak 7/30/2007 15:27",
 		"nonLiteralReceivers" : "tak 7/24/2007 14:52",
 		"searchMessageNode:addTo:" : "yo 8/2/2004 17:23",
-		"search:messageNode:addTo:" : "HilaireFernandes 4/30/2010 15:49"
+		"search:messageNode:addTo:" : "tak 7/24/2007 17:15"
 	},
 	"class" : {
+		"makeJapaneseTranslationFile" : "dgd 4/3/2006 13:24",
 		"browseNonLiteralReceivers" : "tak 11/8/2006 19:45"
 	}
 }
