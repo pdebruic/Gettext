@@ -9,3 +9,7 @@ GetTextExporter new exportTranslator: (InternalTranslator newLocaleID: LocaleID 
 "Export all gettext template and po files."
 GetTextExporter exportAll.
 
+"To register a class category as a new domain"
+TextDomainManager registerClassCategory: 'Morphic-Books' domain: 'Book'.
+"Remove a class category"
+TextDomainManager unregisterClassCategory: 'Morphic-Books'.

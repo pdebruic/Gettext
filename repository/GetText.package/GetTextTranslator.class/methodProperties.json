@@ -1,33 +1,36 @@
 {
 	"instance" : {
 		"domainRegistered:" : "KR 10/23/2007 19:16",
-		"moFileForDomain:" : "KR 10/3/2007 19:46",
+		"moFileForDomain:" : "sebastiansastre 5/22/2013 12:02",
 		"atRandom" : "yo 8/28/2008 13:16",
 		"initialize" : "KR 10/3/2007 19:43",
 		"isDomainLoaded:" : "KR 10/30/2007 18:38",
 		"loadMOFiles" : "KR 10/16/2007 20:58",
+		"refresh" : "sebastiansastre 5/22/2013 12:08",
 		"setCurrent" : "KR 10/17/2007 02:00",
 		"domainUnregistered:" : "KR 10/23/2007 18:44",
-		"loadMOFileForDomain:" : "KR 10/17/2007 03:20",
-		"reloadMOFiles" : "KR 10/5/2007 00:39",
+		"loadMOFileForDomain:" : "sebastiansastre 5/23/2013 11:28",
+		"reloadMOFiles" : "sebastiansastre 5/22/2013 12:06",
 		"translate:inDomain:" : "tak 10/19/2007 13:38"
 	},
 	"class" : {
 		"setupLocaleDirs" : "tak 2/12/2008 10:48",
-		"langDirNameForLocaleID:" : "KR 10/16/2007 20:32",
+		"langDirNameForLocaleID:" : "HilaireFernandes 4/30/2010 18:09",
 		"findMOForLocaleID:domain:" : "tak 10/25/2007 15:56",
-		"availableLanguageLocaleIDs" : "tak 10/24/2007 12:35",
+		"availableLanguageLocaleIDs" : "HilaireFernandes 4/30/2010 18:19",
 		"defaultLocaleDirs" : "KR 10/16/2007 20:38",
 		"systemDefaultLocaleDirs" : "KR 12/19/2007 12:31",
 		"userDefaultLocaleDirs" : "KR 10/16/2007 20:40",
 		"initialize" : "KR 12/19/2007 12:29",
 		"localeDirsForDomain" : "KR 10/16/2007 20:36",
 		"localeDirsForDomain:" : "KR 10/16/2007 20:30",
-		"privateStartUp" : "KR 12/19/2007 12:32",
-		"setLocaleDir:forDoamin:" : "KR 10/16/2007 20:50",
+		"privateStartUp" : "sebastiansastre 5/23/2013 11:21",
+		"reset" : "sebastiansastre 5/23/2013 11:25",
 		"localeDirForDomain:" : "KR 10/16/2007 20:29",
 		"newForLocaleID:" : "KR 10/16/2007 20:56",
 		"addSystemDefaultLocaleDir:" : "KR 12/19/2007 11:46",
-		"moNameForDomain:" : "KR 10/16/2007 19:40"
+		"moNameForDomain:" : "KR 10/16/2007 19:40",
+		"setLocaleDir:forDoamin:" : "KR 10/16/2007 20:50",
+		"createAvailableTranslators" : "sebastiansastre 5/23/2013 11:20"
 	}
 }

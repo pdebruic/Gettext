@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 searchMessageNode: aMessageNode addTo: aCollection
 
 	((aMessageNode receiver isMemberOf: LiteralNode) and: [(aMessageNode selector isMemberOf: SelectorNode) and: [aMessageNode selector key = #translated]]) ifTrue: [

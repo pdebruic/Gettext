@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 searchBlockNode: aBlockNode addTo: aCollection
 
 	aBlockNode statements do: [:e |

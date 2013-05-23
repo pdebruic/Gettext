@@ -1,4 +1,4 @@
 exporting
 exportTemplate
-	"GetTextExporter2 new exportTemplate"
+	"GetTextExporter new exportTemplate"
 	self exportTranslator: nil

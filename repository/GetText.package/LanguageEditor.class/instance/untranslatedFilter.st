@@ -1,4 +1,0 @@
-accessing
-untranslatedFilter
-	^ untranslatedFilter
-		ifNil: ['']

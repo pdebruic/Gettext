@@ -1,13 +1,8 @@
 exporting
 exportTranslator: translator 
 	"Export translation files. the file extention is 'po', or 'pot' if translator is nil "
-	"GetTextExporter2 new exportTranslator: NaturalLanguageTranslator current "
-	| domains |
-	domains := Dictionary new.
-	self appendTranslations: domains.
-	domains
-		keysAndValuesDo: [:domainName :value |
-			self
-				export: value
-				translator: translator
-				domain: domainName]
+	"GetTextExporter new exportTranslator: NaturalLanguageTranslator current "
+	
+	self 
+		exportTranslator: translator 
+		for: self class defaultSelectors 

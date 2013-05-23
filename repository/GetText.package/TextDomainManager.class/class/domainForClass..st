@@ -1,3 +1,3 @@
 accessing
 domainForClass: aClass
-^'etoys'
+	^Classes at: aClass theNonMetaClass name ifAbsent: [self defaultDomain]
